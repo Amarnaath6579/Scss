@@ -1,0 +1,750 @@
+/*
+define a variables
+*/
+@import 'partials/partials';
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+#button1{
+    border: 1px solid $yellow-color;
+    color: $whitesmoke-color;
+    font-weight: bold;
+    background-color: $yellow-color;
+    padding: 9px;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/img/Group\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    width: 250px;
+    padding: 30px 0 0 30px;
+}
+.nav{
+    float: Right;
+    div{
+        display: inline-block;
+        line-height: 140px;
+        margin: 0 35px;
+        font-size: 20px;
+    }
+}
+.checkbtn{
+    color: black;
+    font-size: 30px;
+    float:right;
+    line-height: 100px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*Hover start*/
+a{
+    color: black;
+}
+a.home,a:hover{
+    color: rgb(64, 61, 241);
+    border-bottom:2px solid rgb(64, 61, 241);
+    padding-bottom: 2px;
+}
+/*Hover end*/
+/* Container2 start*/
+.container2{
+    display: flex;
+    padding-left: 150px;
+    div{
+        width: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 5px;
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+/*Container2 ends*/
+/* Container3 start*/
+
+/*Down Symbol*/
+.fa-angle-down{
+    float: right;
+    font-weight: bold;  
+}
+/*Down Symbol ends*/
+.container3{
+    width: 55%;
+    height: 140px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(184, 180, 180);
+    border-radius: 10px;
+    margin-left: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    div{
+        font-size: 20px;
+    }
+}
+.city{
+    padding: 20px 10px 0 10px ;
+    width: 20%;
+    height: 65px;
+    float: left;
+    border-right: 1px solid rgb(206, 206, 206);
+    border-bottom: 2px solid rgb(206, 206, 206);
+    border-radius: 10px 0 0 0;
+}
+/* First input text start*/
+.SEAR1{
+    color: rgb(0, 0, 0);
+    padding: 10px 0 10px 20px;
+    width: 60%;
+    height: 65px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom: 2px solid rgb(206, 206, 206);
+    float: left;
+    font-size: 20px;
+    outline: none;
+}
+/* First input text ends*/
+#button2{
+    background-color: $yellow-color;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 15px;
+    border: 1px solid $yellow-color;
+    text-align: center;
+    border-radius: 0 10px 0 0;
+    width: 20%;
+    height: 65px;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    float: left;
+}
+select{
+    width: 26%;
+    height: 45px;
+    border: 1px solid rgb(206, 206, 206);
+    float: left;
+    padding: 10px;
+    margin: 15px;
+    font-size: 20px;
+    background-color: white;
+    outline: none;
+}
+/* Container3 end*/
+/*Container4 Start*/
+.container4{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(96, 77, 202);
+    padding: 50px 0 0 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    div{
+        font-size: 20px;
+    }
+}
+.chennai{
+    width: 12%;
+    border-bottom: 2px solid rgb(206, 206, 206);
+    float: left;
+    margin-right: 40px;
+    color: $whitesmoke-color;
+    padding-bottom: 8px; 
+}
+.SEAR2{
+    width: 24%;
+    border-bottom: 2px solid rgb(206, 206, 206);
+    float: left;
+    margin-right: 40px;
+    color: $whitesmoke-color;
+    padding-bottom: 8px;
+    font-size: 20px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    background: none;
+    outline: none;
+}
+.SEAR2::placeholder{
+    color: rgb(255, 234, 234);
+}
+.hoard{
+    width: 20%;
+    border-bottom: 2px solid rgb(206, 206, 206);
+    float: left;
+    margin-right: 40px;
+    color: $whitesmoke-color; 
+    padding-bottom: 8px;
+}
+.availability{
+    width: 16%;
+    border-bottom: 2px solid rgb(206, 206, 206);
+    float: left;
+    margin-right: 40px;
+    color: $whitesmoke-color; 
+    padding-bottom: 8px;
+}
+#button3{
+    background-color: $yellow-color;
+    color: $whitesmoke-color; 
+    width: 6%;
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid $yellow-color;
+}
+#S2{
+    color: $whitesmoke-color; 
+    border: 3px solid $whitesmoke-color;
+    float: left;
+    text-align: center;
+    padding: 0 10px;
+    font-size: 34px;
+}
+/*Container 4 end */
+.map{
+    width: 100%;
+    height: 700px;
+}
+/*Container 5 Start */
+.container5{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(82, 82, 82);
+    color: $whitesmoke-color;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 38px;
+    
+}
+.About{
+    width: 27%;
+    float:left;
+    line-height:1.9;
+    margin-right: 70px;
+    text-align: justify;
+}
+.Contact{
+    width: 20%;
+    float:left;
+    line-height:1.9;
+    margin-right: 173px;
+}
+.news{
+    width: 30%;
+    float:left;
+    line-height:1.5;
+}
+/*Form*/
+input[type=email]{
+    font-size: 20px;
+    display: inline;
+    width: 56%;
+    padding: 12px;
+    border: 1px solid $whitesmoke-color;
+}
+button{
+    font-size: 20px;
+    display: inline;
+    padding: 12px 35px 12px 35px;
+    border: 1px solid $lite-yellow;
+    background-color: $lite-yellow;
+    color: $whitesmoke-color; 
+}
+#fa{
+    color: $whitesmoke-color;
+    border: 2px solid $whitesmoke-color;
+    padding: 8px;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 50%;
+}
+/*Form*/
+/*Container 5 end */
+@media screen and (max-width: 1134px){
+    /*Hover start*/
+    a{
+        color: black;
+       }
+      a.home,a:hover{
+       color: rgb(64, 61, 241);
+       border-bottom:2px solid rgb(64, 61, 241);
+       padding-bottom: 2px;
+           }
+   /*Hover end*/
+    .logo{
+        width: 200px;
+        padding: 30px 0 0 30px;
+    }
+    .nav>div{
+        font-size: 18px;
+        line-height: 80px;
+        margin: 0 15px;
+    }
+    /*container2 start*/
+    .container2 > div{
+        font-size: 18px;
+    }
+    .container2{
+        padding-left: 100px;
+    }
+    /*container2 ends*/
+    /*container3 start*/
+    .container3{
+        margin-left: 45px;
+        width: 80%;
+    }
+    /*container3 ends*/
+     /*container4 start*/
+    .container4{
+        padding: 50px 0 0 30px; 
+        div{
+            font-size: 16px;
+        }
+    }
+    .chennai{
+        width: 10%;
+        margin-right: 3%; 
+    }
+    .SEAR2{
+        width: 28%;
+        margin-right: 3%;
+        font-size: 16px;
+    }
+    .hoard{
+        width: 20%;
+        margin-right: 3%;
+    }
+    .availability{
+        width: 11%;
+        margin-right: 3%;
+    }
+    #button3{
+        width: 8%;
+        padding: 7px 1px;
+    }
+    #S2{
+        color: $whitesmoke-color; 
+        border: 3px solid $whitesmoke-color;
+        font-size: 28px;
+    }
+      /*container4 ends*/
+      .map{
+        width: 100%;
+        height: 500px;
+    }
+        /*Container 5 Start */
+.container5{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(82, 82, 82);
+    color: $whitesmoke-color;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 38px;
+    
+}
+.About{
+    width: 25%;
+    float:left;
+    line-height:1;
+    margin-right: 70px;
+    text-align: justify;
+}
+.Contact{
+    width: 21%;
+    float:left;
+    line-height:1.3;
+    margin-right: 77px;
+    text-align: justify;
+}
+.news{
+    width: 35%;
+    float:left;
+    line-height:1.5;
+}
+/*Form*/
+input[type=email]{
+    font-size: 11px;
+    display: inline;
+    width: 59%;
+    padding: 12px;
+    border: 1px solid $whitesmoke-color;
+}
+button{
+    font-size: 11px;
+    display: inline;
+    padding: 12px 35px 12px 35px;
+    border: 1px solid $lite-yellow;
+    background-color: $lite-yellow;
+    color: $whitesmoke-color; 
+}
+#fa{
+    color: $whitesmoke-color;
+    border: 2px solid $whitesmoke-color;
+    padding: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 25px;
+    border-radius: 50%;
+}
+}
+@media screen and (max-width: 852px)
+{
+    /*Hover start*/
+       a{
+         color: black;
+        }
+       a.home,a:hover{
+        color: rgb(64, 61, 241);
+        border-bottom:2px solid rgb(64, 61, 241);
+        padding-bottom: 2px;
+            }
+    /*Hover end*/
+    .checkbtn{
+        display: block;
+    }
+    /*Nav start*/
+    .nav{
+        position: fixed;
+        width: 100%;
+        height: 295px;
+        background-color: brown;
+        top: 100px;
+        left:-1000px;
+        text-align: center;
+        transition: all 0.5s;
+        div{
+            display: block;
+            margin: 15px 0;
+            line-height: 30px;
+        }
+    }
+    nav>div>a{
+        font-size: 18px;
+    }
+    /*Nav ends*/
+    #check:checked ~ .nav{
+        left: 0;
+    }
+    section{
+        
+        background-size: cover;
+        height: 100px;
+    }
+     /*container2 start*/
+    .container2{
+        padding-left: 80px;
+        div{
+            font-size: 18px;
+        }
+    }
+    /*container2 ends*/
+     /*container3 start*/
+     .container3{
+        width: 88%;
+        margin-left: 30px;
+    }
+     /*container3 start*/
+     /*container4 start*/
+    .container4{
+        padding: 50px 0 0 5px; 
+        div{
+            font-size: 10px;
+        }
+    }
+    .chennai{
+        width: 12%;
+        margin-right: 3%; 
+    }
+    .SEAR2{
+        width: 17%;
+        margin-right: 3%;
+        font-size: 10px;
+    }
+    .hoard{
+        width: 24%;
+        margin-right: 3%;
+    }
+    .availability{
+        width: 14%;
+        margin-right: 3%;
+    }
+    #button3{
+        width: 8%;
+        padding: 6px 0px;
+        font-size: 10px;
+        margin-right: 7px;
+    }
+    #S2{
+        color: $whitesmoke-color; 
+        border: 3px solid $whitesmoke-color;
+        font-size: 20px;
+    }
+      /*container4 ends*/
+      .map{
+        width: 100%;
+        height: 300px;
+    }
+    /*Container 5 Start */
+.container5{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(82, 82, 82);
+    color: $whitesmoke-color;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    font-size: 11px;
+}
+.About{
+    width: 48%;
+    float:left;
+    line-height:1;
+    margin-right: 11px;
+    text-align: justify;
+}
+.Contact{
+    width: 49%;
+    float:left;
+    line-height:1.3;
+    margin-right: 1px;
+    text-align: justify;
+}
+.news{
+    width: 112%;
+    float:left;
+    line-height:1.5;
+    margin-top: 10px;
+}
+/*Form*/
+input[type=email]{
+    font-size: 11px;
+    display: inline;
+    width: 59%;
+    padding: 12px;
+    border: 1px solid $whitesmoke-color;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+button{
+    font-size: 11px;
+    display: inline;
+    padding: 12px 35px 12px 35px;
+    border: 1px solid $lite-yellow;
+    background-color: $lite-yellow;
+    color: $whitesmoke-color; 
+}
+#N{
+    margin-left: 40px;
+    font-size: 15px;
+}
+#fa{
+    color: $whitesmoke-color;
+    border: 2px solid $whitesmoke-color;
+    padding: 7px;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 50%;
+}
+#icons{
+    margin-left: 25px;
+}
+    
+}
+@media screen and (max-width: 430px){
+    .logo{
+        width: 150px;
+        padding: 30px 0 0 30px;
+    }
+    /*Nav start*/
+    .nav{
+        position: fixed;
+        width: 100%;
+        height: 218px;
+        background-color: #ebebeb;;
+        top: 100px;
+        left:-890px;
+        text-align: center;
+        transition: all 0.5s;
+        div{
+            display: block;
+            margin: 15px 0;
+            line-height: 14px;
+        }
+    }
+    nav>div>a{
+        font-size: 13px;
+    }
+    /*Nav ends*/
+    .checkbtn{
+        font-size: 26px;
+        margin-right:20px ;
+        line-height:100px ;
+    }
+    /*container2 start*/
+    .container2{
+        padding-left: 20px;
+        div{
+            font-size: 14px;
+        }
+    }
+    /*container2 ends*/
+/* Container3 start*/
+.container3{
+    width: 94%;
+    height: 111px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(184, 180, 180);
+    border-radius: 10px;
+    margin-left: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    div{
+        font-size: 17px;
+    }
+}
+.city{
+    padding: 15px 10px 0 10px ;
+    width: 20%;
+    height: 50px;
+}
+/* First input text start*/
+.SEAR1{
+    color: rgb(0, 0, 0);
+    padding: 10px 0 10px 20px;
+    width: 60%;
+    height: 50px;
+    font-size: 13px;
+}
+/* First input text ends*/
+#button2{
+    font-size: 17px;
+    padding-top: 15px;
+    width: 20%;
+    height: 50px; 
+}
+select{
+    width: 26%;
+    height: 38px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+}
+/* Container3 ends*/
+
+ /*container4 start*/
+.container4{
+    padding: 50px 0 0 5px;
+    div{
+        font-size: 10px;
+    } 
+}
+.chennai{
+    width: 15%;
+    margin-right: 3%; 
+}
+.SEAR2{
+    width: 100%;
+    margin-bottom: 16px;
+    font-size: 10px;
+}
+.hoard{
+    width: 30%;
+    margin-right: 3%;
+}
+.availability{
+    width: 19%;
+    margin-right: 3%;
+}
+#button3{
+    width: 13%;
+    padding: 6px 0px;
+    font-size: 12px;
+    margin-right: 7px;
+}
+#S2{
+    color: $whitesmoke-color; 
+    border: 3px solid $whitesmoke-color;
+    font-size: 23px;
+}
+  /*container4 ends*/
+  .map{
+    width: 100%;
+    height: 300px;
+}
+/*Container 5 Start */
+.container5{
+    width: 100%;
+    height: 492px;
+    background-color: rgb(82, 82, 82);
+    color: $whitesmoke-color;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 24px;
+    font-size: 15px;
+}
+.About{
+    width: 100%;
+    float:left;
+    line-height:1;
+    margin-right: 11px;
+    text-align: justify;
+}
+.Contact{
+    width: 100%;
+    float:left;
+    line-height:1.3;
+    margin-right: 1px;
+    text-align: justify;
+    padding-top: 23px;
+}
+.news{
+    width: 112%;
+    float:left;
+    line-height:1.5;
+    margin-top: 20px;
+}
+/*Form*/
+input[type=email]{
+    font-size: 11px;
+    display: inline;
+    width: 59%;
+    padding: 12px;
+    border: 1px solid $whitesmoke-color;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+button{
+    font-size: 11px;
+    display: inline;
+    padding: 12px 35px 12px 35px;
+    border: 1px solid $lite-yellow;
+    background-color: $lite-yellow;
+    color: $whitesmoke-color; 
+}
+#icons{
+    margin-left: 52px;
+}
+#N{
+    margin-left: 0px;
+    font-size: 15px;
+}
+#fa{
+    color: $whitesmoke-color;
+    border: 2px solid $whitesmoke-color;
+    padding: 7px;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 50%;
+}
+}
